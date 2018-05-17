@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "JDProductDeViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    JDProductDeViewController *detailVC = [[JDProductDeViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:detailVC];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
