@@ -137,7 +137,7 @@
 					EE726DCC1F3C37EB000CEEBF = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 436R9GKLUT;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -339,14 +339,15 @@
 			baseConfigurationReference = CBAAEE9546D4101170574258 /* Pods-JDProductDetail.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 436R9GKLUT;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = JDProductDetail/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.didapinche.taxi.driver;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangyunfeng.JDProductDetail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0a2800f3-39a5-4ace-a77b-54f1509a11fe";
-				PROVISIONING_PROFILE_SPECIFIER = "iOS Development: TaxiDriver";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -355,14 +356,15 @@
 			baseConfigurationReference = 5FA5362D1388011AE6AA6766 /* Pods-JDProductDetail.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 436R9GKLUT;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = JDProductDetail/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.didapinche.taxi.driver;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangyunfeng.JDProductDetail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0a2800f3-39a5-4ace-a77b-54f1509a11fe";
-				PROVISIONING_PROFILE_SPECIFIER = "iOS Development: TaxiDriver";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
