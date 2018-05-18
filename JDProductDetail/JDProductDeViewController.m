@@ -2,8 +2,8 @@
 //  JDProductDeViewController.m
 //  JDProductDetail
 //
-//  Created by jiangyunfeng on 2018/5/17.
-//  Copyright © 2018年 姜云锋. All rights reserved.
+//  Created by 两根手指敲代码 on 2018/5/17.
+//  Copyright © 2018年 两根手指敲代码. All rights reserved.
 //
 
 #import "JDProductDeViewController.h"
@@ -31,7 +31,6 @@
 @property(nonatomic,strong) UIView          *transformView;//用来做第一面偏移的view，是 detailTableView、webView的父视图
 @property(nonatomic,strong) UITableView     *detailTableView;//第一面tableview
 @property(nonatomic,strong) UIWebView       *webView;//第一面webview
-
 
 @property(nonatomic,strong) UIWebView       *scrollWebView;//第二面webview
 
