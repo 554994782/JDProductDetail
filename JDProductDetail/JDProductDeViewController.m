@@ -11,11 +11,14 @@
 
 #define WS(weakSelf)  __weak __block __typeof(&*self)weakSelf = self;
 
+
 #define kScreenWidth [[UIScreen mainScreen] bounds].size.width
 #define kScreenHeight [[UIScreen mainScreen] bounds].size.height
-#define TABBAR_HEIGHT 49
+#define IS_iPhoneX (kScreenWidth == 375.f && kScreenHeight == 812.f ? YES : NO)
+#define TABBAR_SAFE_BOTTOM_HEIGHT (IS_iPhoneX ? 34.f : 0.f)
+#define TABBAR_HEIGHT (TABBAR_SAFE_BOTTOM_HEIGHT + 49.f)
 #define STATUSBAR_HEIGHT ([[UIApplication sharedApplication] statusBarFrame].size.height)
-#define NAVBAR_HEIGHT (STATUSBAR_HEIGHT+44)
+#define NAVBAR_HEIGHT (STATUSBAR_HEIGHT+44.f)
 
 #define kEndHeight 80
 
